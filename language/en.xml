@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.anonymizationForced"><![CDATA[Force anonymization]]></item>
+	</category>
+	
+	<category name="wbb.post">
+		<item name="wbb.post.anonymized"><![CDATA[Anonymous]]></item>
+		<item name="wbb.post.option.anonymization"><![CDATA[Anonymize post]]></item>
+		<item name="wbb.post.option.anonymization.description"><![CDATA[If you choose to anonymize a post all your personal information will be removed. {if ($board->anonymizationMode == 'default' && WBB_POST_ANONYMIZATION_MODE != 'fixed') || $board->anonymizationMode != 'fixed'}Your username will be randomly chosen, but stays the same for the entire thread.{/if}}]]></item>
+	</category>
+	
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedThread"><![CDATA[Can create anonymized threads]]></item>
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedPost"><![CDATA[Can create anonymized posts]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.wbb_post_anonymization_require_activation"><![CDATA[Anonymized posts have to be enabled]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode"><![CDATA[Mode of anonymization]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.hash"><![CDATA[Hash]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.list"><![CDATA[Anonymized usernames]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.fixed"><![CDATA[Fully anonymous]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.description"><![CDATA[<ul>
+			<li>Fully anonymous: Everyone will be called “Anonymous”.</li>
+			<li>Anonymized usernames: Everyone will be assigned an anonymized username and retain it for a topic.</li>
+			<li>Hash: Everyone will be assigned a 12 letter string and retain it for a topic.</li>
+		</ul>]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_names"><![CDATA[Anonymized usernames]]></item>
+	</category>
+</language>

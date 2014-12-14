@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/templatelistener.xsd">
+	<import>
+		<templatelistener name="messageFormSettingsPostAnonymization">
+			<environment>user</environment>
+			<templatename>messageFormSettings</templatename>
+			<eventname>settings</eventname>
+			<templatecode><![CDATA[{include file='__messageFormSettingsPostAnonymization' application='wbb'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="messageFormSettingsInlinePostAnonymization">
+			<environment>user</environment>
+			<templatename>messageFormSettingsInline</templatename>
+			<eventname>settings</eventname>
+			<templatecode><![CDATA[{include file='__messageFormSettingsInlinePostAnonymization' application='wbb'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="messageSidebarAnonymization">
+			<environment>user</environment>
+			<templatename>messageSidebar</templatename>
+			<eventname>header</eventname>
+			<templatecode><![CDATA[{include file='__messageSidebarAnonymization' application='wbb'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="boardAddAnonymizationProperties">
+			<environment>admin</environment>
+			<templatename>boardAdd</templatename>
+			<eventname>properties</eventname>
+			<templatecode><![CDATA[{include file='__boardAddAnonymizationProperties' application='wbb'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="boardAddAnonymizationStyleFields">
+			<environment>admin</environment>
+			<templatename>boardAdd</templatename>
+			<eventname>styleFields</eventname>
+			<templatecode><![CDATA[{include file='__boardAddAnonymizationStyleFields' application='wbb'}]]></templatecode>
+		</templatelistener>
+	</import>
+</data>

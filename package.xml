@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="be.bastelstu.wbb.anonymization" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename>Anonymized posts</packagename><!-- We are legion! -->
+		<packagename language="de">Anonymisierte Beiträge</packagename><!-- We are legion! -->
+		<packagedescription><![CDATA[Allows to create anonymized posts.]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Erlaubt es anonymisierte Beiträge zu erstellen.]]></packagedescription>
+		<isapplication>0</isapplication>
+		<version>1.0.0 Beta 1</version>
+		<date>2014-12-14</date>
+		<license><![CDATA[Creative Commons Attribution-NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>]]></license>
+	</packageinformation>
+	
+	<authorinformation>
+		<author><![CDATA[Tim Düsterhus, Maximilian Mader]]></author>
+		<authorurl><![CDATA[https://tims.bastelstu.be]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="4.0.0 Alpha 1">com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="1.0.0 Beta 1">be.bastelstu.wcf.signer</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<instruction type="file" application="wbb">file.tar</instruction>
+		<instruction type="template" application="wbb">template.tar</instruction>
+		<instruction type="acpTemplate" application="wbb">acpTemplate.tar</instruction>
+		<instruction type="aclOption">aclOption.xml</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		<instruction type="sql">install.sql</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="*">
+		<instruction type="file" application="wbb">file.tar</instruction>
+		<instruction type="template" application="wbb">template.tar</instruction>
+		<instruction type="acpTemplate" application="wbb">acpTemplate.tar</instruction>
+		<instruction type="aclOption">aclOption.xml</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+</package>

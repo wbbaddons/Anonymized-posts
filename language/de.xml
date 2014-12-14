@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<category name="wbb.acp.board">
+		<item name="wbb.acp.board.anonymizationForced"><![CDATA[Anonymisierung erzwingen]]></item>
+	</category>
+	
+	<category name="wbb.post">
+		<item name="wbb.post.anonymized"><![CDATA[Anonym]]></item>
+		<item name="wbb.post.option.anonymization"><![CDATA[Beitrag anonymisieren]]></item>
+		<item name="wbb.post.option.anonymization.description"><![CDATA[Wenn Sie einen Beitrag anonymisieren, dann werden sämtliche persönlichen Informationen aus dem Beitrag entfernt. {if ($board->anonymizationMode == 'default' && WBB_POST_ANONYMIZATION_MODE != 'fixed') || $board->anonymizationMode != 'fixed'}Der Benutzername wird zufällig gewählt, bleibt aber das gesamte Thema über gleich.{/if}]]></item>
+	</category>
+	
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedThread"><![CDATA[Kann anonyme Themen erstellen]]></item>
+		<item name="wcf.acl.option.com.woltlab.wbb.board.canCreateAnonymizedPost"><![CDATA[Kann anonyme Beiträge erstellen]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.wbb_post_anonymization_require_activation"><![CDATA[Anonyme Beiträge müssen aktiviert werden]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode"><![CDATA[Anonymisierungsmodus]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.hash"><![CDATA[Hash]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.list"><![CDATA[Anonyme Namen]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.fixed"><![CDATA[Komplett anonym]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_mode.description"><![CDATA[<ul>
+			<li>Komplett anonym: Jeder Benutzer erhält „Anonymous“ als Namen.</li>
+			<li>Anonyme Namen: Jeder Benutzer erhält einen Anonymen Namen und eine Nummer und behält diese für jeweils ein Thema.</li>
+			<li>Hash: Jeder Benutzer erhält eine zwölfstellige Zeichenkette als Namen und behält diese für jeweils ein Thema.</li>
+		</ul>]]></item>
+		<item name="wcf.acp.option.wbb_post_anonymization_names"><![CDATA[Anonyme Namen]]></item>
+	</category>
+</language>
