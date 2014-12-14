@@ -6,7 +6,7 @@
 		<packagedescription><![CDATA[Allows to create anonymized posts.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Erlaubt es anonymisierte Beiträge zu erstellen.]]></packagedescription>
 		<isapplication>0</isapplication>
-		<version>1.0.0 Beta 1</version>
+		<version>1.0.0 Beta 2</version>
 		<date>2014-12-14</date>
 		<license><![CDATA[Creative Commons Attribution-NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>]]></license>
 	</packageinformation>
@@ -17,9 +17,9 @@
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="4.0.0 Alpha 1">com.woltlab.wbb</requiredpackage>
-		<requiredpackage minversion="1.0.0 Beta 1">be.bastelstu.wcf.signer</requiredpackage>
+		<requiredpackage minversion="2.1.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="4.1.0 Alpha 1">com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="1.0.0 Beta 1" file="requirements/be.bastelstu.wcf.signer.tar">be.bastelstu.wcf.signer</requiredpackage>
 	</requiredpackages>
 	
 	<instructions type="install">
