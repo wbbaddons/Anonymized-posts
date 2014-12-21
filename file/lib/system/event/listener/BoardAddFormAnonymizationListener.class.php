@@ -19,7 +19,7 @@ class BoardAddFormAnonymizationListener implements \wcf\system\event\listener\IP
 	
 	/**
 	 * anonymization mode used in this board
-	 * @var boolean
+	 * @var string
 	 */
 	public $anonymizationMode = 'default';
 	
