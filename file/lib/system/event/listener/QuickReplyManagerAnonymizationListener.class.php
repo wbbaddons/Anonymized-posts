@@ -27,6 +27,7 @@ class QuickReplyManagerAnonymizationListener implements \wcf\system\event\listen
 	 * @see	\wcf\system\event\listener\IParameterizedEventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName, array &$parameters) {
+		if (!($eventObj->getContainer() instanceof \wbb\data\thread\Thread || ($eventObj->getContainer() instanceof \wcf\data\DatabaseObjectDecorator && $eventObj->getContainer()->getDecoratedObject() instanceof \wbb\data\thread\Thread))) return;
 		$board = $eventObj->getContainer()->getBoard();
 		if (!$board->getPermission('canCreateAnonymizedPost') && !$board->anonymizationForced) return;
 		
