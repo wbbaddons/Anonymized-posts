@@ -6,24 +6,28 @@
 			<eventname>readFormParameters</eventname>
 			<listenerclassname>wbb\system\event\listener\ThreadAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\ThreadAddForm</eventclassname>
 			<eventname>save</eventname>
 			<listenerclassname>wbb\system\event\listener\ThreadAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\ThreadAddForm</eventclassname>
 			<eventname>saved</eventname>
 			<listenerclassname>wbb\system\event\listener\ThreadAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\ThreadAddForm</eventclassname>
 			<eventname>show</eventname>
 			<listenerclassname>wbb\system\event\listener\ThreadAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		
 		<eventlistener>
@@ -31,30 +35,35 @@
 			<eventname>readData</eventname>
 			<listenerclassname>wbb\system\event\listener\PostAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\PostAddForm</eventclassname>
 			<eventname>readFormParameters</eventname>
 			<listenerclassname>wbb\system\event\listener\PostAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\PostAddForm</eventclassname>
 			<eventname>save</eventname>
 			<listenerclassname>wbb\system\event\listener\PostAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\PostAddForm</eventclassname>
 			<eventname>saved</eventname>
 			<listenerclassname>wbb\system\event\listener\PostAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wbb\form\PostAddForm</eventclassname>
 			<eventname>show</eventname>
 			<listenerclassname>wbb\system\event\listener\PostAddFormAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		
 		<eventlistener>
@@ -62,18 +71,21 @@
 			<eventname>validateParameters</eventname>
 			<listenerclassname>wbb\system\event\listener\QuickReplyManagerAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
 			<eventname>createMessage</eventname>
 			<listenerclassname>wbb\system\event\listener\QuickReplyManagerAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
 			<eventname>createdMessage</eventname>
 			<listenerclassname>wbb\system\event\listener\QuickReplyManagerAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		
 		<eventlistener>
