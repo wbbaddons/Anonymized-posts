@@ -6,8 +6,8 @@
 		<packagedescription><![CDATA[Allows to create anonymized posts.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Erlaubt es anonymisierte Beiträge zu erstellen.]]></packagedescription>
 		<isapplication>0</isapplication>
-		<version>1.0.0 RC 2</version>
-		<date>2015-03-07</date>
+		<version>1.0.0 RC 3</version>
+		<date>2015-03-08</date>
 		<license><![CDATA[Creative Commons Attribution-NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>]]></license>
 	</packageinformation>
 	
@@ -26,12 +26,14 @@
 		<instruction type="file" application="wbb">file.tar</instruction>
 		<instruction type="template" application="wbb">template.tar</instruction>
 		<instruction type="acpTemplate" application="wbb">acpTemplate.tar</instruction>
+		<instruction type="sql" run="standalone">install.sql</instruction>
+		<instruction type="sql" run="standalone">install2.sql</instruction>
+		<instruction type="sql" run="standalone">install3.sql</instruction>
 		<instruction type="aclOption">aclOption.xml</instruction>
 		<instruction type="option">option.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="eventListener">eventListener.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="sql">install.sql</instruction>
 	</instructions>
 	
 	<instructions type="update" fromversion="*">
@@ -40,8 +42,8 @@
 		<instruction type="acpTemplate" application="wbb">acpTemplate.tar</instruction>
 		<instruction type="aclOption">aclOption.xml</instruction>
 		<instruction type="option">option.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="eventListener">eventListener.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 </package>
