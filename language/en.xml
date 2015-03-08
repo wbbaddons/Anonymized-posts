@@ -7,7 +7,7 @@
 	<category name="wbb.post">
 		<item name="wbb.post.anonymized"><![CDATA[Anonymous]]></item>
 		<item name="wbb.post.option.anonymization"><![CDATA[Anonymize post]]></item>
-		<item name="wbb.post.option.anonymization.description"><![CDATA[If you choose to anonymize a post all your personal information will be removed. {if ($board->anonymizationMode == 'default' && WBB_POST_ANONYMIZATION_MODE != 'fixed') || $board->anonymizationMode != 'fixed'}Your username will be randomly chosen, but stays the same for the entire thread.{/if}}]]></item>
+		<item name="wbb.post.option.anonymization.description"><![CDATA[If you choose to anonymize a post all your personal information will be removed. {if ($board->anonymizationMode == 'default' && WBB_POST_ANONYMIZATION_MODE != 'fixed') || $board->anonymizationMode != 'fixed'}Your username will be randomly chosen, but stays the same for the entire thread.{/if}]]></item>
 	</category>
 	
 	<category name="wcf.acl.option">
