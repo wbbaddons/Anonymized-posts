@@ -72,13 +72,14 @@
 			<eventname>createMessage</eventname>
 			<listenerclassname>wbb\system\event\listener\QuickReplyManagerAnonymizationListener</listenerclassname>
 			<environment>user</environment>
+			<nice>-100</nice>
 		</eventlistener>
 		<eventlistener>
 			<eventclassname>wcf\system\message\QuickReplyManager</eventclassname>
 			<eventname>createdMessage</eventname>
 			<listenerclassname>wbb\system\event\listener\QuickReplyManagerAnonymizationListener</listenerclassname>
 			<environment>user</environment>
-			<nice>-100</nice>
+			<nice>100</nice>
 		</eventlistener>
 		
 		<eventlistener>
