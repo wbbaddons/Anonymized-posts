@@ -6,7 +6,7 @@
 		<packagedescription><![CDATA[Allows to create anonymized posts.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Erlaubt es anonymisierte Beiträge zu erstellen.]]></packagedescription>
 		<isapplication>0</isapplication>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<date>2015-05-27</date>
 		<license><![CDATA[Creative Commons Attribution-NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>]]></license>
 	</packageinformation>
