@@ -32,7 +32,7 @@ class AnonymizationUtil {
 					return 'OP';
 				}
 				
-				$number = hexdec(mb_substr(\wcf\util\Signer::getSignature($userID.'-'.$threadID), 0, 12));
+				$number = abs(hexdec(mb_substr(\wcf\util\Signer::getSignature($userID.'-'.$threadID), 0, 12)));
 				
 				if ($anonymizationMode == 'list') {
 					$names = \wcf\util\ArrayUtil::trim(explode("\n", \wcf\util\StringUtil::unifyNewlines(WBB_POST_ANONYMIZATION_NAMES)));
